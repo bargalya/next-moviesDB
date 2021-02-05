@@ -1,0 +1,29 @@
+@import "../../../assets/styles/variables";
+
+.movie-details {
+  background: $color-bg-black;
+  color: $color-text-bright;
+  height: 100%;
+  .movie {
+    display: flex;
+    margin: 10px;
+
+    img {
+      border-radius: 10px;
+      width: 280px;
+      height: 400px;
+    }
+
+    .details {
+      margin-left: 10px;
+      margin-top: 40px;
+
+      .summary {
+        width: 50%;
+        margin-top: 50px;
+        white-space: pre-wrap;
+      }
+    }
+  }
+
+}

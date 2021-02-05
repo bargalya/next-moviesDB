@@ -1,0 +1,10 @@
+<div class="movie-details">
+  <app-manage-bar [showBackBtn]="true"></app-manage-bar>
+  <div class="movie" *ngIf="(movie$ | async) as movieDetails">
+    <img class="image" [src]="movieDetails.largeimage">
+    <div class="details">
+      <app-movie-details-header [movie]="movieDetails"></app-movie-details-header>
+      <div class="summary" [innerHTML]="movieDetails.synopsis"></div>
+    </div>
+  </div>
+</div>

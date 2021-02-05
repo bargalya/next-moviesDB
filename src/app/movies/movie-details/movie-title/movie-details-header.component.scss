@@ -1,0 +1,14 @@
+.movie-details-header {
+  .title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .extra-info {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 400;
+    flex-wrap: wrap;
+  }
+}

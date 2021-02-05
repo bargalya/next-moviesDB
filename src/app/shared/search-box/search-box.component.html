@@ -1,0 +1,9 @@
+<div class="search-box">
+  <div class="input-wrapper">
+    <input type="text" [formControl]="searchFormControl" [placeholder]="placeHolder">
+    <div class="icon">
+      <span *ngIf="!searchFormControl.value" class="material-icons">search</span>
+      <span *ngIf="searchFormControl.value" class="material-icons clear" (click)="clearText()">clear</span>
+    </div>
+  </div>
+</div>

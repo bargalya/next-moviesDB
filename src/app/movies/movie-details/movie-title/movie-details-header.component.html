@@ -1,0 +1,10 @@
+<div class="movie-details-header">
+  <div class="title" [innerHTML]="movie.title"></div>
+  <div class="extra-info">
+    <div>{{ movie.released }} | {{movie.runtime}} | </div>
+    <app-rating
+      [rate]="movie.rating"
+      [tooltipTemplate]="ratingTooltipTemplate"
+      [isReadOnly]="true"></app-rating>
+  </div>
+</div>

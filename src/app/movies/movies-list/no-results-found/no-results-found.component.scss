@@ -1,0 +1,15 @@
+@import "../../../../assets/styles/variables";
+
+.no-results-found {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 600;
+  flex-direction: column;
+  color: $color-text-bright;
+
+  .material-icons {
+    font-size: 70px;
+  }
+}

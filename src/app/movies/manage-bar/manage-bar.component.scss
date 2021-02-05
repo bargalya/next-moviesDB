@@ -1,0 +1,17 @@
+@import "../../../assets/styles/variables";
+
+.manage-bar {
+  padding: 20px;
+  background-color: $color-bg-dark;
+  color: $color-text-bright;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  .title {
+    font-size: 28px;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 7px;
+  }
+}

@@ -1,0 +1,19 @@
+<div class="filters">
+  <div class="filter">
+    <label>{{filterRatingLabel}}</label>
+    <app-rating
+      [rate]="this.moviesService.ratingFilter"
+      [tooltipTemplate]="filterRatingTooltip"
+      (rateChange)="filterByRating($event)">
+    </app-rating>
+  </div>
+  <div class="filter">
+    <app-search-box
+      [searchText]="filterText"
+      [placeHolder]="filterTitleLabel"
+      (searchTextChange)="filterByTitle($event)"></app-search-box>
+  </div>
+  <div class="filter">
+    <button class="remove" (click)="clearFilters()">{{removeFiltersLabel}}</button>
+  </div>
+</div>

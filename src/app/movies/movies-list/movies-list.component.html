@@ -1,0 +1,7 @@
+<div class="movies-list">
+  <app-manage-bar [showFilters]="true"></app-manage-bar>
+  <div class="list" *ngIf="moviesServices.movies$ | async as movies">
+    <app-movie-item *ngFor="let movie of movies" [movie]="movie"></app-movie-item>
+    <app-no-results-found *ngIf="movies.length === 0"></app-no-results-found>
+  </div>
+</div>

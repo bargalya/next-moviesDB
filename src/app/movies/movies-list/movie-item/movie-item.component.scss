@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/variables";
+
+.movie-item {
+  width: 166px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: $color-bg-dark;
+  overflow: hidden;
+
+
+  &:hover {
+    border-color: $color-text-bright;
+  }
+
+  &:focus {
+    outline: 1px solid $color-text-bright;
+  }
+
+  .image-wrapper {
+    height: 233px;
+    background-color: $color-bg-black;
+  }
+
+  .title {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: 600;
+    color: $color-text-bright;
+  }
+}

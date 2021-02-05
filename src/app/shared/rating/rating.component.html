@@ -1,0 +1,15 @@
+<div class="rating">
+  <div class="stars">
+    <container-element
+      *ngFor="let rating of ratingStarts; let i = index"
+      [title]="tooltipTemplate | rateTooltip: isReadOnly ? rate : i+1"
+      class="star"
+      [ngClass]="{'readonly': isReadOnly}"
+      [ngSwitch]="rating"
+      (click)="setRating(i)">
+      <span *ngSwitchCase="ERateType.empty" class="material-icons">star_outline</span>
+      <span *ngSwitchCase="ERateType.partial" class="material-icons">star_half</span>
+      <span *ngSwitchDefault class="material-icons">star</span>
+    </container-element>
+  </div>
+</div>

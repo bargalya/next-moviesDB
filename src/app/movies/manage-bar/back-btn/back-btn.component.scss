@@ -1,0 +1,30 @@
+@import "../../../../assets/styles/variables";
+
+.back-btn {
+  display: flex;
+  justify-content: flex-end;
+
+  button {
+    cursor: pointer;
+    background-color: $color-bg-dark;
+    border: none;
+    color: $color-text-bright;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+    &:focus {
+      outline: 1px dotted $color-outline;
+    }
+  }
+
+  .text {
+    font-family: 'back_future', sans-serif;
+    color: $color-text-bright;
+
+    &.top {
+      font-size: 22px;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import "../../../assets/styles/variables";
+
+.rating {
+  .stars {
+    display: flex;
+    color: $color-star;
+
+    .star {
+      .readonly {
+        pointer-events: none;
+      }
+
+      &:hover:not(.readonly) {
+        cursor: pointer;
+        color: $color-star-hover;
+      }
+    }
+
+  }
+
+}

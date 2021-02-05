@@ -1,0 +1,7 @@
+<div class="movie-item"
+     [routerLink]="['/movie',movie.id]">
+  <div class="image-wrapper">
+    <img class="image" [src]="movie.image">
+  </div>
+  <div class="title" [innerHTML]="movie.title"></div>
+</div>
